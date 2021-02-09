@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --mode production",
+    "build:local":"npx webpack --entry  ./index.js --output ./dist/bundle.js --mode development",
+    "build:external": "webpack --config ./external/Archivodepruebaexterno.js",
+    "build:multi": "webpack --config ./multi-entry-point/webpack.config.js"
   },
   "keywords": [
     "webpack"

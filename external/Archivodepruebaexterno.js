@@ -6,6 +6,7 @@ module.exports={
     // Todo lo que estare anexando a la entrada, este caso solo es el archivo index.js
     entry: path.resolve(__dirname,'index.js'),
     // seleccionamos el modo
+    mode: 'development',
     output: {
         // devuelve rutas absolutas, partiendo de la ruta actual y manda mi archivo final ahi
         // con una coma despues del __dirname podemos colocar as carpetas dentro de nuestro servidor, comunmente se usa dist
