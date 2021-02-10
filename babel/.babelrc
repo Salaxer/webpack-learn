@@ -1,6 +1,9 @@
 // Aqui vamos a configurar solo a babale
 {
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ],
     "presets": [
-        "presset-env"
+        "@babel/preset-env"
     ]
 }
