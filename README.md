@@ -1,9 +1,4 @@
-# Título del Proyecto
+# webpack-learn
+_this repositoty is only informative about webpack and personal, if somebody want to learn about this, you can contact me in my web page_
 
-_Acá va un párrafo que describa lo que es el proyecto_
-
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+**Salaxer.com**
