@@ -1,0 +1,6 @@
+// Aqui vamos a configurar solo a babale
+{
+    "presets": [
+        "presset-env"
+    ]
+}
