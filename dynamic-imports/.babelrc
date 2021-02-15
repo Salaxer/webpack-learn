@@ -1,0 +1,11 @@
+// Aqui vamos a configurar solo a babale
+{
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-syntax-dynamic-import"
+    ],
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ]
+}
