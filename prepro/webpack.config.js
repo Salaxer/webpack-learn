@@ -38,9 +38,41 @@ module.exports={
                 test: /\.css$/,
                 use: [
                     'style-loader',
-                    'css-loader'
+                    {
+                        // aqui le digo que postcss-loader cargue antes que mi css
+                        // ceda la batuta dice el profe
+                        loader: 'css-loader',
+                        options:{
+                            importLoaders: 1
+                        }
+                    },
+                    'postcss-loader'
                 ],
             },
+            {
+				test: /\.scss$/,
+				use: [ 
+					"style-loader",
+					"css-loader",
+					"sass-loader"
+					]
+			},
+			{
+				test: /\.less$/,
+				use: [ 
+					"style-loader",
+					"css-loader",
+					"less-loader"
+					]
+			},
+			{
+				test: /\.styl$/,
+				use: [ 
+					"style-loader",
+					"css-loader",
+					"stylus-loader"
+				]
+			},
             {
                 test:/\.jpg|png|gif|woff|eot|svg|ttf|mp4|webm$/,
                 use: {
@@ -49,8 +81,10 @@ module.exports={
                         limit: 900000,
                     }
                 }
-            
-            },            
+            }, 
+            // La siguiente configuracion sirve para que acepte todo estos tipos de archivos.
+            // Para eso tuvimos que haber instalado las dependencias requeridas
+                     
         ]
     },
     resolve: {
